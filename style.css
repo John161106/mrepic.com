@@ -16,7 +16,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     min-height: 100vh;
 }
 
@@ -30,7 +30,6 @@ body {
     box-shadow: 0 0 35px #8b2be255;
     background: rgba(15, 10, 30, 0.80);
     backdrop-filter: blur(8px);
-    transform: translate(10px, 85px);
 }
 
 h1 {
@@ -102,6 +101,90 @@ b {
         opacity: 1;
         transform: translateY(0);
     }
+}
+/* WORDS ON THE WELCOME IMAGE */
+.welcome-text {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+}
+
+.welcome-text h1 {
+    font-size: 55px;
+    color: gold;
+}
+
+.welcome-text h2 {
+    font-size: 35px;
+    color: white;
+}
+
+.welcome-text p {
+    font-size: 22px;
+    color: #d9b5ff;
+}
 
 
+/* TABLETS */
+@media screen and (max-width: 768px) {
+    .login {
+        width: 90%;
+        max-width: 400px;
+        padding: 22px 18px;
+    }
+
+    .login h1 {
+        font-size: 27px;
+    }
+}
+
+/* MOBILE PHONES */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 15px 12px;
+        background-position: center;
+    }
+
+    .login {
+        width: 100%;
+        max-width: 360px;
+        padding: 20px 15px;
+        border-radius: 14px;
+    }
+
+    .login h1 {
+        font-size: 24px;
+    }
+
+    .login p {
+        font-size: 14px;
+        margin-bottom: 18px;
+    }
+
+    .login input {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .login button {
+        padding: 13px;
+        font-size: 15px;
+    }
+
+    .login a,
+    .login span {
+        font-size: 12px;
+    }
+
+    .welcome-text h1 {
+        font-size: 32px;
+    }
+
+    .welcome-text h2 {
+        font-size: 23px;
+    }
+
+    .welcome-text p {
+        font-size: 16px;
+    }
 }
