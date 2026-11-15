@@ -28,10 +28,9 @@ body {
     border: 1px solid #9d35ff;
     border-radius: 18px;
     box-shadow: 0 0 35px #8b2be255;
-    animation: show 1s ease;
     background: rgba(15, 10, 30, 0.80);
     backdrop-filter: blur(8px);
-    transform: translate(20px, 100px);
+    transform: translate(10px, 85px);
 }
 
 h1 {
